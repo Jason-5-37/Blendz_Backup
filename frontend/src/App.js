@@ -8,8 +8,9 @@ import Home from './pages/home';
 import Shop from './pages/Shop/index';
 import Help from './pages/Help/index';
 import About from './pages/About/index';
-import Login from './pages/login/login.js';
+import Login from './pages/login/index';
 import Register from "./pages/Register";
+import ResetPassword from "./pages/ResetPassword";
 
 class App extends Component {
 
@@ -25,6 +26,7 @@ class App extends Component {
         <Route path="/about" exact element={<About />}> </Route>
         <Route path="/login" exact element={<Login />}> </Route>
         <Route path="/register" exact element={<Register />}> </Route>
+        <Route path="/resetpassword" exact element={<ResetPassword />}> </Route>
         </Routes>
       </Router>
       <Footer/>

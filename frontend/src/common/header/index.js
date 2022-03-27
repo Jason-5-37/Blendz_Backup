@@ -1,21 +1,17 @@
 import React, { Component } from "react";
 import { HeaderWrapper, Logo, Nav, NavItem, Addition, Button } from './style';
 import { connect } from 'react-redux'; 
-import { actionCreators } from './store';
-import { actionCreators as loginActionCreators } from '../../pages/login/store/all.js';
+import { actionCreators as loginActionCreators } from '../../pages/login/store/index';
 
-class Header extends Component {
-    
-    constructor(props) {
-        super(props);
-    }
-    
+class Header extends Component {    
+
     render() {
         const { login, logout} = this.props;
         return(
             <HeaderWrapper>
                 <Logo href="/"/>
-                <Nav>                        
+                <Nav>               
+                    <div>Login as: {this.props.Currentuser}</div>
                     <NavItem href="about">About</NavItem>
                     <NavItem>|</NavItem>                                          
                     <NavItem href="help">Help</NavItem>
@@ -37,14 +33,18 @@ class Header extends Component {
 
 const mapStateToProps = (state) => {
     return {
-        login: state.get('login').get('login')
+        login: state.get('login').get('login'),
+        Currentuser: state.getIn(['login','Currentuser'])
     }
 }
 
 const mapDispathToProprs = (dispatch) => {
     return{
         logout(){
-            dispatch(loginActionCreators.logout())
+            dispatch(loginActionCreators.log_out())
+        },
+        getUser(){
+            dispatch(loginActionCreators.get_User())
         }
     }
 }

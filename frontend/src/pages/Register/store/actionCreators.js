@@ -1,5 +1,6 @@
 import axios from "axios";
-import * as constants from './constants';
+import * as constants from '../../login/store/constants';
+import { signup } from "../../../firebase";
 
 const ChangeRLogin = () => ({
     type: constants.CHANGE_RLOGIN,
@@ -7,14 +8,14 @@ const ChangeRLogin = () => ({
 })
 
 
-export const register = (email, newpassword) => {
+export const sign_up = (email, password) => {
     return(dispatch) => {
-        const userdata = {email,newpassword};
-
-        axios.post('/api/user', userdata).then((res) => {
-            console.log(res)
+        signup(email, password).then((res) => {
+            console.log(res);
+            dispatch(ChangeRLogin())
         }).catch(error => {
             console.log(error);
+            alert(error);
         })
     }
 }
