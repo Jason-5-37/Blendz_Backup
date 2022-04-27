@@ -1,0 +1,18 @@
+[{
+    "id":"A1",
+    "name": "Accessories A",
+    "price": 1,
+    "imgUrl":"../img/A1.jpg"
+  },
+  {
+    "id":"A2",
+    "name": "Accessories B",
+    "price": 2,
+    "imgUrl":"../img/A1.jpg"
+  },
+  {
+    "id":"A3",
+    "name": "Accessories C",
+    "price": 3,
+    "imgUrl":"../img/A1.jpg"
+  }]

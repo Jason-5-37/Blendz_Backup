@@ -1,0 +1,18 @@
+    [{
+        "id":"B1",
+        "name": "Beverages A",
+        "price": 50,
+        "imgUrl":"../img/B1.jpg"
+      },
+      {
+        "id":"B2",
+        "name": "Beverages B",
+        "price": 60,
+        "imgUrl":"../img/B1.jpg"
+      },
+      {
+        "id":"B3",
+        "name": "Beverages C",
+        "price": 80,
+        "imgUrl":"../img/B1.jpg"
+      }]

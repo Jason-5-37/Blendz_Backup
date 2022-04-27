@@ -1,0 +1,55 @@
+[{
+    "id":"A1",
+    "name": "Accessories A",
+    "price": 1,
+    "imgUrl":"../img/A1.jpg"
+  },
+  {
+    "id":"A2",
+    "name": "Accessories B",
+    "price": 2,
+    "imgUrl":"../img/A1.jpg"
+  },
+  {
+    "id":"A3",
+    "name": "Accessories C",
+    "price": 3,
+    "imgUrl":"../img/A1.jpg"
+  },
+  {
+    "id":"B1",
+    "name": "Beverages A",
+    "price": 50,
+    "imgUrl":"../img/B1.jpg"
+  },
+  {
+    "id":"B2",
+    "name": "Beverages B",
+    "price": 60,
+    "imgUrl":"../img/B1.jpg"
+  },
+  {
+    "id":"B3",
+    "name": "Beverages C",
+    "price": 80,
+    "imgUrl":"../img/B1.jpg"
+  },
+  {
+    "id":"M1",
+    "name": "A",
+    "price": 5000,
+    "imgUrl":"../img/M1.png"
+  },
+  {
+    "id":"M2",
+    "name": "B",
+    "price": 6000,
+    "imgUrl":"../img/M2.png"
+  },
+  {
+    "id":"M3",
+    "name": "C",
+    "price": 8000,
+    "imgUrl":"../img/M2.png"
+  }]
+
