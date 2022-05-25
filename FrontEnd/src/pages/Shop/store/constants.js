@@ -1,0 +1,5 @@
+export const SELECT_MACHINE= 'shop/SELECT_MACHINE';
+export const SELECT_BEVERAGES = 'shop/SELECT_BEVERAGES';
+export const SELECT_ACCESSORIES = 'shop/SELECT_ACCESSORIES';
+
+export const CHANGELIST = 'shop/CHANGELIST';
